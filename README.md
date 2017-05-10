@@ -1,5 +1,3 @@
-##Task 1 Time-line
-
 ## A. Informations
 
 Port x-team.com to Zeit/Next.js to allow on easy server-rendered react components. For now its just pure components without styles.
