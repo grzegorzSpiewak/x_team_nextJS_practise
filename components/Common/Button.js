@@ -1,6 +1,8 @@
+
 'use strict';
 import React from 'react'
 import cx from 'classnames'
+import Link from 'next/link'
 
 const Button = (props) => {
   const classNames = cx('btn', {
@@ -12,7 +14,12 @@ const Button = (props) => {
   const setTarget = cx({
     'target="_blank"': props.newTab
   })
-  return <a href= {props.href} title={props.title} className={classNames}>{props.anchor}</a>
+  return (
+    <Link href={ `${props.href}` }>
+      <a href={ props.href } title={ props.title } className={ classNames }>{ props.anchor }</a>
+    </Link>
+  )
+
 
 }
 

@@ -1,3 +1,4 @@
+
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11,6 +12,10 @@ var _react2 = _interopRequireDefault(_react);
 var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
+
+var _link = require('next/dist/lib/link.js');
+
+var _link2 = _interopRequireDefault(_link);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27,11 +32,15 @@ var Button = function Button(props) {
   var setTarget = (0, _classnames2.default)({
     'target="_blank"': props.newTab
   });
-  return _react2.default.createElement('a', { href: props.href, title: props.title, className: classNames, __source: {
+  return _react2.default.createElement(_link2.default, { href: '' + props.href, __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 18
     }
-  }, props.anchor);
+  }, _react2.default.createElement('a', { href: props.href, title: props.title, className: classNames, __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, props.anchor));
 };
 
 exports.default = Button;

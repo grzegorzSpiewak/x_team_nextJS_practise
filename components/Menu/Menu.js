@@ -6,7 +6,7 @@ import Button from '../Common/Button'
 import cx from 'classnames'
 
 const buttonProps = {
-  href: '/hire-developers/',
+  href: '/hire-developers',
   anchor: 'Hire X-Team',
   title: 'Hire X-Team',
   big: false,
@@ -14,19 +14,25 @@ const buttonProps = {
 }
 
 const renderItems = (items) => {
-  return items.data.map((item) =>
-    <Link href={item.href} key={item.title}>
-      <li className="menu__item" role="menuitem">
-        <a
-          href={item.href}
-          title={item.title}
-          className={ cx('menu__link', {'menu__link--current': item.currentPage}) }
-        >
-        {item.anchor}
-        </a>
-      </li>
-    </Link>
-  )
+  return items.map((item) =>
+   <Link
+     href={ `${item.href}` }
+     key={ `${item.title}` }
+   >
+     <li
+       className="menu__item"
+       role="menuitem"
+     >
+       <a
+         href={`${item.href}`}
+         title={`${item.title}`}
+         className={ cx('menu__link', {'menu__link--current': item.currentPage}) }
+         >
+         {item.anchor}
+      </a>
+    </li>
+  </Link>
+ )
 }
 
 const Menu = (props) => (
@@ -38,8 +44,8 @@ const Menu = (props) => (
       <button className="menu__toggle"><span className="menu__toggle__line">menu</span></button>
       <nav className="menu__menubar">
         <ul role="menubar" className="menu__list">
-          {renderItems(props)}
-          <li className="menu__item">{Button(buttonProps)}</li>
+          { renderItems(props.Menu.Items) }
+          <li className="menu__item">{ Button(buttonProps) }</li>
         </ul>
       </nav>
     </div>

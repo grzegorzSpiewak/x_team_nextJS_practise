@@ -11,8 +11,11 @@ const Layout = ({ children }, props) => (
       <title>X-Team</title>
       <link rel='stylesheet' href='/static/css/hero.css' />
     </Head>
-    <Menu data={ Homepage.Menu.Items } />
-    {children}
+
+    <Menu {...Homepage}/>
+
+    { children }
+
     <Footer />
   </div>
 )

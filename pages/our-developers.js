@@ -6,7 +6,7 @@ export default () => (
   <Layout>
     <p>Our Developers Page</p>
     <Link href="/">
-      Go home
+      <a>Go home</a>
     </Link>
   </Layout>
 );
