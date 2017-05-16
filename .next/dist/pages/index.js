@@ -12,6 +12,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Head = require('../components/Head/Head');
+
+var _Head2 = _interopRequireDefault(_Head);
+
 var _Layout = require('../templates/Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
@@ -68,65 +72,75 @@ var _jsxFileName = '/home/grzegorz/Desktop/x_team_nextJS_practise/pages/index.js
  */
 
 exports.default = function () {
-  return _react2.default.createElement(_Layout2.default, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    }
-  }, _react2.default.createElement(_Herobrands2.default, (0, _extends3.default)({}, _Homepage2.default.Hero, {
+  return _react2.default.createElement('div', {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     }
-  })), _react2.default.createElement(_Video2.default, (0, _extends3.default)({}, _Homepage2.default.Video, {
+  }, _react2.default.createElement(_Head2.default, (0, _extends3.default)({}, _Homepage2.default.Head, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     }
-  })), _react2.default.createElement(_Cavalry2.default, (0, _extends3.default)({}, _Homepage2.default.Cavalry, {
+  })), _react2.default.createElement(_Layout2.default, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     }
-  })), _react2.default.createElement(_VideoQuote2.default, (0, _extends3.default)({}, _Homepage2.default.VideoQuote, {
+  }, _react2.default.createElement(_Herobrands2.default, (0, _extends3.default)({}, _Homepage2.default.Hero, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     }
-  })), _react2.default.createElement(_CheckList2.default, (0, _extends3.default)({}, _Homepage2.default.CheckList, {
+  })), _react2.default.createElement(_Video2.default, (0, _extends3.default)({}, _Homepage2.default.Video, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     }
-  })), _react2.default.createElement(_SectionCutout2.default, (0, _extends3.default)({}, _Homepage2.default.Hire10Years, {
+  })), _react2.default.createElement(_Cavalry2.default, (0, _extends3.default)({}, _Homepage2.default.Cavalry, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     }
-  })), _react2.default.createElement(_SectionCutout2.default, (0, _extends3.default)({}, _Homepage2.default.NeverStop, {
+  })), _react2.default.createElement(_VideoQuote2.default, (0, _extends3.default)({}, _Homepage2.default.VideoQuote, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     }
-  })), _react2.default.createElement(_SectionCutout2.default, (0, _extends3.default)({}, _Homepage2.default.Ordinary, {
+  })), _react2.default.createElement(_CheckList2.default, (0, _extends3.default)({}, _Homepage2.default.CheckList, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     }
-  })), _react2.default.createElement(_Quotes2.default, (0, _extends3.default)({}, _Homepage2.default.Quotes, {
+  })), _react2.default.createElement(_SectionCutout2.default, (0, _extends3.default)({}, _Homepage2.default.Hire10Years, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     }
-  })), _react2.default.createElement(_Skills2.default, (0, _extends3.default)({}, _Homepage2.default.Skills, {
+  })), _react2.default.createElement(_SectionCutout2.default, (0, _extends3.default)({}, _Homepage2.default.NeverStop, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     }
-  })), _react2.default.createElement(_Hire2.default, (0, _extends3.default)({}, _Homepage2.default.Hire, {
+  })), _react2.default.createElement(_SectionCutout2.default, (0, _extends3.default)({}, _Homepage2.default.Ordinary, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     }
-  })));
+  })), _react2.default.createElement(_Quotes2.default, (0, _extends3.default)({}, _Homepage2.default.Quotes, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    }
+  })), _react2.default.createElement(_Skills2.default, (0, _extends3.default)({}, _Homepage2.default.Skills, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    }
+  })), _react2.default.createElement(_Hire2.default, (0, _extends3.default)({}, _Homepage2.default.Hire, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    }
+  }))));
 };

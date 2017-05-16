@@ -16,7 +16,7 @@ var Homepage = {
   },
 
   Hero: {
-    title: "Keep<br>Moving<br><i>Forward.</i>",
+    title: "Keep<br />Moving<br><i>Forward.</i>",
     caption: "Motivated developers, ready to join your team.",
     layout: "centered",
     style: "home"

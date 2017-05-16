@@ -31,7 +31,7 @@ const renderItems = (items) => {
          {item.anchor}
       </a>
     </li>
-  </Link>
+  </Link> 
  )
 }
 
@@ -44,7 +44,7 @@ const Menu = (props) => (
       <button className="menu__toggle"><span className="menu__toggle__line">menu</span></button>
       <nav className="menu__menubar">
         <ul role="menubar" className="menu__list">
-          { renderItems(props.Menu.Items) }
+          { renderItems(props.Items) }
           <li className="menu__item">{ Button(buttonProps) }</li>
         </ul>
       </nav>

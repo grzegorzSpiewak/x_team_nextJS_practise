@@ -3,6 +3,7 @@ import React from 'react'
 /**
  * Components
  */
+import Head from '../components/Head/Head'
 import Layout from '../templates/Layout'
 import Herobrands from '../components/Herobrands/Herobrands'
 import Video from '../components/Video/Video'
@@ -19,17 +20,20 @@ import Hire from '../components/Hire/Hire'
 import Homepage from '../data/Homepage'
 
 export default () => (
-  <Layout>
-    <Herobrands {...Homepage.Hero}/>
-    <Video {...Homepage.Video}/>
-    <Cavalry {...Homepage.Cavalry}/>
-    <VideoQuote {...Homepage.VideoQuote}/>
-    <CheckList {...Homepage.CheckList}/>
-    <SectionCutout {...Homepage.Hire10Years}/>
-    <SectionCutout {...Homepage.NeverStop}/>
-    <SectionCutout {...Homepage.Ordinary}/>
-    <Quotes {...Homepage.Quotes}/>
-    <Skills {...Homepage.Skills}/>
-    <Hire {...Homepage.Hire}/>
-  </Layout>
+  <div>
+    <Head {...Homepage.Head}/>
+    <Layout>
+      <Herobrands {...Homepage.Hero}/>
+      <Video {...Homepage.Video}/>
+      <Cavalry {...Homepage.Cavalry}/>
+      <VideoQuote {...Homepage.VideoQuote}/>
+      <CheckList {...Homepage.CheckList}/>
+      <SectionCutout {...Homepage.Hire10Years}/>
+      <SectionCutout {...Homepage.NeverStop}/>
+      <SectionCutout {...Homepage.Ordinary}/>
+      <Quotes {...Homepage.Quotes}/>
+      <Skills {...Homepage.Skills}/>
+      <Hire {...Homepage.Hire}/>
+    </Layout>
+  </div>
 );

@@ -99,7 +99,7 @@ var Menu = function Menu(props) {
       fileName: _jsxFileName,
       lineNumber: 46
     }
-  }, renderItems(props.Menu.Items), _react2.default.createElement('li', { className: 'menu__item', __source: {
+  }, renderItems(props.Items), _react2.default.createElement('li', { className: 'menu__item', __source: {
       fileName: _jsxFileName,
       lineNumber: 48
     }
