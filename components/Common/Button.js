@@ -11,16 +11,11 @@ const Button = (props) => {
   const mediabox = cx({
     'mediabox': props.overlay
   })
-  const setTarget = cx({
-    'target="_blank"': props.newTab
-  })
   return (
-    <Link href={ `${props.href}` }>
-      <a href={ props.href } title={ props.title } className={ classNames }>{ props.anchor }</a>
+    <Link href={ `${props.href}` } key={ props.title }>
+      <a href={ props.href } title={ props.title } target="_blank" className={ `${classNames} ${mediabox} btn--${props.style}` }>{ props.anchor }</a>
     </Link>
   )
-
-
 }
 
 export default Button

@@ -19,7 +19,13 @@ var Homepage = {
     title: "Keep<br />Moving<br><i>Forward.</i>",
     caption: "Motivated developers, ready to join your team.",
     layout: "centered",
-    style: "home"
+    style: "home",
+    buttons: [{ href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
+      anchor: 'Watch Video',
+      title: 'Watch Video',
+      overlay: true,
+      big: true
+    }]
   },
 
   Video: {
@@ -33,12 +39,18 @@ var Homepage = {
     items: [{ pic: "dev1.jpg", icon: "people", title: "We'll join your team.", text: "You manage the projects, and our trusted developers join your team full-time." }, { pic: "dev2.jpg", icon: "contract", title: "Simple, flexible contract.", text: "Scale your team as needed.<br>We bill on a monthly basis." }, { pic: "dev3.jpg", icon: "graph", title: "We support their growth.", text: "We fund every developer's learning and growth to keep them motivated." }]
   },
 
+  VideoFilter: {
+    title: "The right team",
+    subtitle: "Kaplan Inc. explains why they chose X-Team.",
+    link: "https://www.youtube.com/watch?v=CWvmUmC9Dpk"
+  },
+
   VideoQuote: {
-    logo: "images/logos/kaplan-logo.png",
+    logo: "static/images/logos/kaplan-logo.png",
     alt: "Kaplan Inc.",
     title: "The right team",
     text: "In this video, Kaplan Inc., one of the largest education companies in the world, explains why they partner with X-Team to build their products.",
-    image: "images/pics/the-right-team.jpg",
+    image: "static/images/pics/the-right-team.jpg",
     link: "https://www.youtube.com/watch?v=CWvmUmC9Dpk"
   },
 

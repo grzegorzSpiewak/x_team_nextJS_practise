@@ -23,7 +23,7 @@ var renderItems = function renderItems(items) {
         fileName: _jsxFileName,
         lineNumber: 7
       }
-    }, _react2.default.createElement('img', { className: 'brands__logo__image', src: '/images/brands/' + item.logo, __source: {
+    }, _react2.default.createElement('img', { className: 'brands__logo__image', src: 'static/images/brands/' + item.logo, alt: item.alt, __source: {
         fileName: _jsxFileName,
         lineNumber: 8
       }

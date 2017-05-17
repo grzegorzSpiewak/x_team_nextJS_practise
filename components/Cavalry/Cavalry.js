@@ -6,7 +6,7 @@ const renderItems = (items) => {
   return items.map((item) =>
     <article className="cavalry__item" key={ item.title }>
       <ul className="cavalry__item__list">
-        <li className="cavalry__item__pic"><img src={ `${Config.staticPath}/images/${item.pic}` } alt="" className="cavalry__item__pic__img" /></li>
+        <li className="cavalry__item__pic"><img src={ `${Config.staticPath}static/images/${item.pic}` } alt="" className="cavalry__item__pic__img" /></li>
         <li className="cavalry__item__icon__wrap"><span className={ `cavalry__item__icon cavalry__item__icon--${item.icon}` }></span></li>
         <li className="cavalry__item__title">{ item.title }</li>
         <li className="cavalry__item__text">{ item.text }</li>

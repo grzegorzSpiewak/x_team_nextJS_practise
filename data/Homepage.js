@@ -22,6 +22,13 @@ const Homepage = {
     caption: "Motivated developers, ready to join your team.",
     layout: "centered",
     style: "home",
+    buttons: [
+      {href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
+      anchor: 'Watch Video',
+      title: 'Watch Video',
+      overlay: true,
+      big: true
+    }]
   },
 
   Video: {
@@ -39,12 +46,18 @@ const Homepage = {
     ]
   },
 
+  VideoFilter: {
+    title: "The right team",
+    subtitle: "Kaplan Inc. explains why they chose X-Team.",
+    link: "https://www.youtube.com/watch?v=CWvmUmC9Dpk",
+  },
+
   VideoQuote: {
-    logo: "images/logos/kaplan-logo.png",
+    logo: "static/images/logos/kaplan-logo.png",
     alt: "Kaplan Inc.",
     title: "The right team",
     text: "In this video, Kaplan Inc., one of the largest education companies in the world, explains why they partner with X-Team to build their products.",
-    image: "images/pics/the-right-team.jpg",
+    image: "static/images/pics/the-right-team.jpg",
     link: "https://www.youtube.com/watch?v=CWvmUmC9Dpk"
   },
 

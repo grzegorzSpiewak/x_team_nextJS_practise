@@ -29,39 +29,45 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/home/grzegorz/Desktop/x_team_nextJS_practise/components/Herobrands/Herobrands.js';
 
 
-var buttonProps = {
-  href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
-  anchor: 'Watch Video',
-  title: 'Watch Video',
-  overlay: true,
-  big: true
+var renderCTA = function renderCTA(buttons) {
+  return buttons.map(function (button) {
+    return (0, _Button2.default)({
+      href: button.href,
+      anchor: button.anchor,
+      title: button.title,
+      style: button.style,
+      big: button.big,
+      overlay: button.overlay,
+      key: button.title
+    });
+  });
 };
 
 var Herobrands = function Herobrands(props) {
   return _react2.default.createElement('section', { className: 'hero-section hero-section--' + props.layout + ' hero-section--' + props.style, __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 22
     }
   }, _react2.default.createElement('div', { className: 'hero-section__wrap hero-section__wrap--' + props.layout, __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 23
     }
   }, _react2.default.createElement('h1', { className: 'hero-section__title hero-section__title--' + props.layout, dangerouslySetInnerHTML: { __html: props.title }, __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 24
     }
   }), _react2.default.createElement('div', { className: 'hero-section__action hero-section__action--' + props.layout, __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 25
     }
-  }, _react2.default.createElement('h2', { className: 'hero-section__caption hero-section__caption--' + props.layout, __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    }
-  }, props.caption), (0, _Button2.default)(buttonProps))), _react2.default.createElement(_Brands2.default, (0, _extends3.default)({}, _BrandsData2.default, {
-    __source: {
+  }, _react2.default.createElement('p', { className: 'hero-section__caption hero-section__caption--' + props.layout, __source: {
       fileName: _jsxFileName,
       lineNumber: 26
+    }
+  }, props.caption), renderCTA(props.buttons))), _react2.default.createElement(_Brands2.default, (0, _extends3.default)({}, _BrandsData2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
     }
   })));
 };

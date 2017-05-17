@@ -32,9 +32,12 @@
 
 
 .hero-section--landing .hero-section__caption {
-	font-size: 1.75rem;
-	line-height: 1.1;
-	max-width: 20em;
+	font-size: 1.25rem;
+	line-height: 1.25;
+	max-width: 80%;
+}
+.hero-section--landing .btn {
+	font-size: 1rem;
 }
 .hero-section__caption {
 	font: 300 1.25rem/1.375 'Source Sans Pro', sans-serif; /* 20px/22px */
@@ -87,15 +90,23 @@
 		text-align: center;
 	}
 	.hero-section__title {
-		font-size: 5rem;
+		font-size: 4rem;
 		line-height: .8;
 	}
 	.hero-section__caption {
-		font-size: 2rem;
+		font-size: 1.75rem;
 		line-height: 1;
+	}
+	.hero-section--landing .hero-section__caption {
+		font-size: 1.25rem;
+		line-height: 1.375;
+		max-width: 80%;
 	}
 	.hero-section .btn {
 		font-size: 1.2rem;
+	}
+	.hero-section--landing .btn {
+		font-size: 1rem;
 	}
 }
 @media screen and (max-width: 1023px) {
@@ -107,21 +118,21 @@
 }
 @media screen and (min-width: 1024px) {
 	.hero-section {
-		/* video background
+		/* video background 
 		z-index: 1;
 		width: 100%;
 		top: 0;
 		bottom: 0;
 		background: transparent; */
-
+		
 		flex-flow: row wrap;
 		z-index: 1;
-	    width: 100%;
-	    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
-	    max-height: 100%;
-	    top:0;
-	    left:0; right:0; /* horizontal center */
-	    background: transparent;
+    width: 100%; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    max-height: 100%;
+    top:0;
+    left:0; right:0; /* horizontal center */
+    background: transparent;
 	}
 	.hero-section--no-video {
 		background: #363248 url(../images/hero-homepage.jpg) no-repeat;
@@ -195,13 +206,15 @@
 		line-height: 2.65rem;
 		text-align: right;
 	}
-
+	
 	.hero-section--landing .hero-section__title {
 		margin-top: -6rem;
+		font-size: 4rem;
 	}
 	.hero-section--landing .hero-section__caption {
-		font-size: 1.4rem;
+	  max-width: 34em;
 	}
+
 	.section__copy--hero {
 		max-width: 60%;
 		margin-left: auto;
@@ -224,9 +237,6 @@
 	.hero-section__caption {
 		font-size: 1.7rem;
 		line-height: 1.8rem;
-	}
-	.hero-section--landing .hero-section__caption {
-		font-size: 1.75rem;
 	}
 	.hero-section__title--centered {
 		font-size: 5rem;

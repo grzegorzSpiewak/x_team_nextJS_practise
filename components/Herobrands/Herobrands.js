@@ -4,12 +4,18 @@ import Brands from '../Brands/Brands'
 import BrandsData from '../../data/BrandsData'
 import Button from '../Common/Button'
 
-const buttonProps = {
-  href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
-  anchor: 'Watch Video',
-  title: 'Watch Video',
-  overlay: true,
-  big: true
+const renderCTA = (buttons) => {
+  return buttons.map((button) =>
+    Button({
+      href: button.href,
+      anchor: button.anchor,
+      title: button.title,
+      style: button.style,
+      big: button.big,
+      overlay: button.overlay,
+      key: button.title
+    })
+  )
 }
 
 const Herobrands = (props) => (
@@ -17,10 +23,10 @@ const Herobrands = (props) => (
     <div className={ `hero-section__wrap hero-section__wrap--${props.layout}` }>
       <h1 className={ `hero-section__title hero-section__title--${props.layout}` } dangerouslySetInnerHTML={ {__html: props.title} }></h1>
       <div className={ `hero-section__action hero-section__action--${props.layout}` }>
-        <h2 className={ `hero-section__caption hero-section__caption--${props.layout}` }>
+        <p className={ `hero-section__caption hero-section__caption--${props.layout}` }>
           {props.caption}
-        </h2>
-        { Button(buttonProps) }
+        </p>
+         { renderCTA(props.buttons) }
       </div>
     </div>
     <Brands {...BrandsData}/>

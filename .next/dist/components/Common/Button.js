@@ -29,16 +29,13 @@ var Button = function Button(props) {
   var mediabox = (0, _classnames2.default)({
     'mediabox': props.overlay
   });
-  var setTarget = (0, _classnames2.default)({
-    'target="_blank"': props.newTab
-  });
-  return _react2.default.createElement(_link2.default, { href: '' + props.href, __source: {
+  return _react2.default.createElement(_link2.default, { href: '' + props.href, key: props.title, __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     }
-  }, _react2.default.createElement('a', { href: props.href, title: props.title, className: classNames, __source: {
+  }, _react2.default.createElement('a', { href: props.href, title: props.title, target: '_blank', className: classNames + ' ' + mediabox + ' btn--' + props.style, __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 16
     }
   }, props.anchor));
 };

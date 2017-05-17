@@ -11,10 +11,10 @@ const HeadElement = (props) => (
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>{props.pageTitle} · X-Team</title>
-    <link rel='stylesheet' href='/static/css/hero.css' />
+    <link rel='stylesheet' href='/static/css/main.css' />
 
     <link rel="icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png" />
     <meta name="description" content={`${props.metaDescription}`}/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -26,15 +26,17 @@ const HeadElement = (props) => (
     <meta name="twitter:description" content={`${props.metaDescription}`}/>
     <meta name="twitter:creator" content="@xteam"/>
 
-    <meta name="twitter:image" content="/images/x-team-social-media.jpg"/>
+    <meta name="twitter:image" content="static/images/x-team-social-media.jpg"/>
 
     <meta property="og:title" content={`${props.pageTitle}`}/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content={`https://x-team.com${props.slug}`}/>
-    <meta property="og:image" content="/images/x-team-social-media.jpg"/>
+    <meta property="og:image" content="static/images/x-team-social-media.jpg"/>
     <meta property="og:description" content={`${props.metaDescription}`}/>
     <meta property="og:site_name" content="X-Team"/>
     <meta property="fb:admins" content="148617228512461"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:800,800i%7CRaleway:700%7CSource+Sans+Pro:300,400,700" media="all" />
   </Head>
 )
 
