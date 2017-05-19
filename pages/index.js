@@ -15,7 +15,6 @@ import SectionCutout from '../components/SectionCutout/SectionCutout'
 import Quotes from '../components/Quotes/Quotes'
 import Skills from '../components/Skills/Skills'
 import Hire from '../components/Hire/Hire'
-import Menu from '../components/Menu/Menu'
 /**
  * Content
  */

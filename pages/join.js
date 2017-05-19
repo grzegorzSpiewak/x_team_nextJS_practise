@@ -6,6 +6,7 @@ import React from 'react'
 import Head from '../components/Head/Head'
 import Layout from '../templates/Layout'
 import Link from 'next/link'
+import Herobrands from '../components/Herobrands/Herobrands'
 /**
  * Content
  */

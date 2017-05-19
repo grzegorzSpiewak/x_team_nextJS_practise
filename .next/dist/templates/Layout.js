@@ -24,6 +24,10 @@ var _Homepage = require('../data/Homepage');
 
 var _Homepage2 = _interopRequireDefault(_Homepage);
 
+var _FooterData = require('../data/FooterData');
+
+var _FooterData2 = _interopRequireDefault(_FooterData);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/home/grzegorz/Desktop/x_team_nextJS_practise/templates/Layout.js';
@@ -34,19 +38,19 @@ var Layout = function Layout(_ref) {
   return _react2.default.createElement('div', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     }
   }, _react2.default.createElement(_Menu2.default, (0, _extends3.default)({}, _Homepage2.default.Menu, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     }
-  })), children, _react2.default.createElement(_Footer2.default, {
+  })), children, _react2.default.createElement(_Footer2.default, (0, _extends3.default)({}, _FooterData2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     }
-  }));
+  })));
 };
 
 exports.default = Layout;

@@ -26,7 +26,7 @@ const Herobrands = (props) => (
         <p className={ `hero-section__caption hero-section__caption--${props.layout}` }>
           {props.caption}
         </p>
-         { renderCTA(props.buttons) }
+        { renderCTA(props.buttons) }
       </div>
     </div>
     <Brands {...BrandsData}/>
