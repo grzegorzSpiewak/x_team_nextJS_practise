@@ -11,15 +11,19 @@ import Link from 'next/link'
  */
 import Homepage from '../data/Homepage'
 
+export default class extends React.Component {
 
-export default () => (
-  <div>
-    <Head {...Homepage.Head}/>
-    <Layout>
-      <p>Blog page</p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </Layout>
-  </div>
-);
+  render () {
+    return (
+      <div>
+        <Head {...Homepage.Head}/>
+        <Layout>
+          <p>This is blog</p>
+          <Link href="/">
+            <a>Go home</a>
+          </Link>
+        </Layout>
+      </div>
+    )
+  }
+}

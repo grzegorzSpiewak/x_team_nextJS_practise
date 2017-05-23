@@ -20,21 +20,28 @@ import Hire from '../components/Hire/Hire'
  */
 import Homepage from '../data/Homepage'
 
-export default () => (
-  <div>
-    <Head {...Homepage.Head}/>
-    <Layout>
-      <Herobrands {...Homepage.Hero}/>
-      <Video {...Homepage.Video}/>
-      <Cavalry {...Homepage.Cavalry}/>
-      <VideoFilter {...Homepage.VideoFilter}/>
-      <CheckList {...Homepage.CheckList}/>
-      <SectionCutout {...Homepage.Hire10Years}/>
-      <SectionCutout {...Homepage.NeverStop}/>
-      <SectionCutout {...Homepage.Ordinary}/>
-      <Quotes {...Homepage.Quotes}/>
-      <Skills {...Homepage.Skills}/>
-      <Hire {...Homepage.Hire}/>
-    </Layout>
-  </div>
-);
+export default class extends React.Component {
+
+  render () {
+    return (
+      <div>
+        <Head {...Homepage.Head}/>
+
+        <Layout>
+          <Herobrands {...Homepage.Hero}/>
+          <Video {...Homepage.Video}/>
+          <Cavalry {...Homepage.Cavalry}/>
+          <VideoFilter {...Homepage.VideoFilter}/>
+          <CheckList {...Homepage.CheckList}/>
+          <SectionCutout {...Homepage.Hire10Years}/>
+          <SectionCutout {...Homepage.NeverStop}/>
+          <SectionCutout {...Homepage.Ordinary}/>
+          <Quotes {...Homepage.Quotes}/>
+          <Skills {...Homepage.Skills}/>
+          <Hire {...Homepage.Hire}/>
+        </Layout>
+ 
+      </div>
+    )
+  }
+}

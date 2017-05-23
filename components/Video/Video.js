@@ -6,8 +6,6 @@ const Video = (props) => (
 	  <iframe
       className="hero-section__bg__video"
       src={ props.link }
-      webkitallowfullscreen
-      mozallowfullscreen
       allowFullScreen>
     </iframe>
   </div>

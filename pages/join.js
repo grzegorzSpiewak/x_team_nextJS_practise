@@ -12,15 +12,19 @@ import Herobrands from '../components/Herobrands/Herobrands'
  */
 import Homepage from '../data/Homepage'
 
+export default class extends React.Component {
 
-export default () => (
-  <div>
-    <Head {...Homepage.Head}/>
-    <Layout>
-      <p>This is Join Us Page</p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </Layout>
-  </div>
-);
+  render () {
+    return (
+      <div>
+        <Head {...Homepage.Head}/>
+        <Layout>
+          <p>This is Join</p>
+          <Link href="/">
+            <a>Go home</a>
+          </Link>
+        </Layout>
+      </div>
+    )
+  }
+}

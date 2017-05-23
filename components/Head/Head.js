@@ -11,7 +11,6 @@ const HeadElement = (props) => (
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>{props.pageTitle} · X-Team</title>
-    <link rel='stylesheet' href='/static/css/main.css' />
 
     <link rel="icon" href="/images/favicon.ico" />
     <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png" />

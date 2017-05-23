@@ -4,7 +4,7 @@ import cx from 'classnames'
 
 const renderItems = (items) => {
   return items.map((item) =>
-    <li className={ `brands__logo brands__logo--${ item.name }`} key={ item.name } >
+    <li className={ `brands__logo brands__logo--${ item.name }` } key={ item.name } >
       <img className={ `brands__logo__image` } src={ `static/images/brands/${ item.logo }` }  alt={ item.alt }/>
     </li>
   )
