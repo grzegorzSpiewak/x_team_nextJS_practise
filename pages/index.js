@@ -3,18 +3,19 @@ import React from 'react'
 /**
  * Components
  */
-import Head from '../components/Head/Head'
-import Layout from '../templates/Layout'
-import Herobrands from '../components/Herobrands/Herobrands'
-import Video from '../components/Video/Video'
-import Cavalry from '../components/Cavalry/Cavalry'
-import VideoFilter from '../components/VideoFilter/VideoFilter'
-import VideoQuote from '../components/VideoQuote/VideoQuote'
-import CheckList from '../components/CheckList/CheckList'
-import SectionCutout from '../components/SectionCutout/SectionCutout'
-import Quotes from '../components/Quotes/Quotes'
-import Skills from '../components/Skills/Skills'
-import Hire from '../components/Hire/Hire'
+import Head from '../components/Head'
+import Layout from '../components/Layout'
+import Herobrands from '../components/Herobrands'
+import Video from '../components/Video'
+import Cavalry from '../components/Cavalry'
+import VideoFilter from '../components/VideoFilter'
+import VideoQuote from '../components/VideoQuote'
+import CheckList from '../components/CheckList'
+import SectionCutout from '../components/SectionCutout'
+import Quotes from '../components/Quotes'
+import Skills from '../components/Skills'
+import Hire from '../components/Hire'
+import Subscription from '../components/Forms/Subscription'
 /**
  * Content
  */
@@ -28,19 +29,19 @@ export default class extends React.Component {
         <Head {...Homepage.Head}/>
 
         <Layout>
-          <Herobrands {...Homepage.Hero}/>
-          <Video {...Homepage.Video}/>
-          <Cavalry {...Homepage.Cavalry}/>
-          <VideoFilter {...Homepage.VideoFilter}/>
-          <CheckList {...Homepage.CheckList}/>
-          <SectionCutout {...Homepage.Hire10Years}/>
-          <SectionCutout {...Homepage.NeverStop}/>
-          <SectionCutout {...Homepage.Ordinary}/>
-          <Quotes {...Homepage.Quotes}/>
-          <Skills {...Homepage.Skills}/>
-          <Hire {...Homepage.Hire}/>
+          <Herobrands {...Homepage.Hero} />
+          <Video {...Homepage.Video} />
+          <Cavalry {...Homepage.Cavalry} />
+          <VideoFilter {...Homepage.VideoFilter} />
+          <CheckList {...Homepage.CheckList} />
+          <SectionCutout {...Homepage.Hire10Years} />
+          <SectionCutout {...Homepage.NeverStop} />
+          <SectionCutout {...Homepage.Ordinary} />
+          <Skills {...Homepage.Skills} />
+          <Hire {...Homepage.Hire} />
+          <Subscription { ...Homepage.Subscription } />
         </Layout>
- 
+
       </div>
     )
   }

@@ -3,8 +3,8 @@ import React from 'react'
 /**
  * Components
  */
-import Head from '../components/Head/Head'
-import Layout from '../templates/Layout'
+import Head from '../components/Head'
+import Layout from '../components/Layout'
 import Link from 'next/link'
 /**
  * Content

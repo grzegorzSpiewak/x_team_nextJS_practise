@@ -1,8 +1,8 @@
 'use strict';
 import React from 'react'
 import Link from 'next/link'
-import Logo from '../Common/Logo'
-import FooterData from '../../data/FooterData'
+import Logo from './Common/Logo'
+import FooterData from '../data/FooterData'
 
 const renderItems = (items) => {
   return items.map((item) =>

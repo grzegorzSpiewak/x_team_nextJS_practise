@@ -1,7 +1,7 @@
 .hero-section {
 	color: #fff;
 	overflow: hidden;
-	height: 100vh;
+	height: 100%;
 	background: #363248 url(../images/hero-homepage-small.jpg) no-repeat center top;
 	position: relative;
 }
@@ -118,16 +118,16 @@
 }
 @media screen and (min-width: 1024px) {
 	.hero-section {
-		/* video background
+		/* video background 
 		z-index: 1;
 		width: 100%;
 		top: 0;
 		bottom: 0;
 		background: transparent; */
-
+		
 		flex-flow: row wrap;
 		z-index: 1;
-    width: 100%;
+    width: 100%; 
     height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
     max-height: 100%;
     top:0;
@@ -206,7 +206,7 @@
 		line-height: 2.65rem;
 		text-align: right;
 	}
-
+	
 	.hero-section--landing .hero-section__title {
 		margin-top: -6rem;
 		font-size: 4rem;

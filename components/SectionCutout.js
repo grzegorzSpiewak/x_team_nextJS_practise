@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import Button from '../Common/Button'
+import Button from './Common/Button'
 
 const SectionCutout = (props) => (
   <section className={ `block section section--${props.theme} section--${props.style} section--${props.image}` }>

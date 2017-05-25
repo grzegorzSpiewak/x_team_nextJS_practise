@@ -1,9 +1,9 @@
 'use strict';
 import React from 'react'
-import Button from '../Common/Button'
+import Button from './Common/Button'
 
 const Hire = (props) => (
-  <section className="block hire-section hire-section--${props.picture}">
+  <section className={`block hire-section hire-section--${props.picture}`}>
     <div className="hire-section__content">
       <h2 className="hire-section__title" dangerouslySetInnerHTML={ {__html: props.title} }></h2>
       {Button({

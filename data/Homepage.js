@@ -144,6 +144,11 @@ const Homepage = {
     ctaBig: true
   },
 
+  Subscription: {
+    title: "We'll help you unleash.",
+    subtitle: "Join the 20,000 developers who subscribe to our newsletter."
+  }
+
 }
 
 export default Homepage

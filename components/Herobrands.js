@@ -1,8 +1,8 @@
 'use strict';
 import React from 'react'
-import Brands from '../Brands/Brands'
-import BrandsData from '../../data/BrandsData'
-import Button from '../Common/Button'
+import Brands from './Brands'
+import BrandsData from '../data/BrandsData'
+import Button from './Common/Button'
 
 const renderCTA = (buttons) => {
   return buttons.map((button) =>
@@ -24,7 +24,7 @@ const Herobrands = (props) => (
       <h1 className={ `hero-section__title hero-section__title--${props.layout}` } dangerouslySetInnerHTML={ {__html: props.title} }></h1>
       <div className={ `hero-section__action hero-section__action--${props.layout}` }>
         <p className={ `hero-section__caption hero-section__caption--${props.layout}` }>
-          {props.caption}
+          { props.caption }
         </p>
         { renderCTA(props.buttons) }
       </div>

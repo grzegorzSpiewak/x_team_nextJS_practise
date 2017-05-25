@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import Config from '../../config'
+import Config from '../config'
 
 const renderItems = (items) => {
   return items.map((item) =>
@@ -9,7 +9,7 @@ const renderItems = (items) => {
         <li className="cavalry__item__pic"><img src={ `${Config.staticPath}static/images/${item.pic}` } alt="" className="cavalry__item__pic__img" /></li>
         <li className="cavalry__item__icon__wrap"><span className={ `cavalry__item__icon cavalry__item__icon--${item.icon}` }></span></li>
         <li className="cavalry__item__title">{ item.title }</li>
-        <li className="cavalry__item__text">{ item.text }</li>
+        <li className="cavalry__item__text" dangerouslySetInnerHTML={ {__html: item.text} }></li>
       </ul>
     </article>
   )

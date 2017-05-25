@@ -1,8 +1,8 @@
 'use strict';
 import React from 'react'
 import Link from 'next/link'
-import Logo from '../Common/Logo'
-import Button from '../Common/Button'
+import Logo from './Common/Logo'
+import Button from './Common/Button'
 import cx from 'classnames'
 
 const buttonProps = {
@@ -18,6 +18,8 @@ const renderItems = (items) => {
    <Link
      href={ `${item.href}` }
      key={ `${item.title}` }
+     className="menu__item"
+     role="menuitem"
    >
      <li
        className="menu__item"
@@ -31,7 +33,7 @@ const renderItems = (items) => {
          {item.anchor}
       </a>
     </li>
-  </Link> 
+  </Link>
  )
 }
 

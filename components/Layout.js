@@ -1,7 +1,7 @@
 'use strict'
 import React from 'react'
-import Menu from '../components/Menu/Menu'
-import Footer from '../components/Footer/Footer'
+import Menu from './Menu'
+import Footer from './Footer'
 import Homepage from '../data/Homepage'
 import FooterData from '../data/FooterData'
 

@@ -1,7 +1,7 @@
 'use strict'
 import React from 'react'
-import Button from '../Common/Button'
-import Config from '../../config'
+import Button from './Common/Button'
+import Config from '../config'
 
 const renderItems = (items) => {
   return items.map((item) =>

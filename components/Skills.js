@@ -1,8 +1,8 @@
 'use strict';
 import React from 'react'
-import SkillsBadgesData from '../../data/SkillsBadgesData'
-import SkillsBadges from '../SkillsBadges/SkillsBadges'
-import Button from '../Common/Button'
+import SkillsBadgesData from '../data/SkillsBadgesData'
+import SkillsBadges from './SkillsBadges'
+import Button from './Common/Button'
 
 const Skills = (props) => (
   <section className="skills">
@@ -10,9 +10,7 @@ const Skills = (props) => (
 			<h2 className="skills__title">
         { props.title }
       </h2>
-			<p className="skills__subtitle">
-        { props.subtitle }
-			</p>
+			<p className="skills__subtitle" dangerouslySetInnerHTML={ {__html: props.subtitle} }></p>
 			<SkillsBadges {...SkillsBadgesData} />
 			{ Button(props.button) }
 		</div>
