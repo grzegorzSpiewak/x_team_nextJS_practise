@@ -18,7 +18,8 @@ export default class MyDocument extends Document {
          {this.props.customValue}
          <Main />
          <NextScript />
-         <script src="/static/js/main.js"></script>
+         <script src="/static/js/vendor/mediabox.min.js"></script>
+         <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
        </body>
      </html>
     )

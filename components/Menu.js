@@ -9,19 +9,14 @@ class Menu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: 0,
+      menuOpen: false
     }
   }
 
-  componentDidMount() {
-   this.setState({
-     width: window.innerWidth,
-   })
-  }
-
-  toggleNavigation() {
-    const body = document.querySelector('body');
-    body.classList.toggle('body--menu-visible')
+  handleClick() {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
   }
 
   createLinks(items) {
@@ -40,7 +35,6 @@ class Menu extends React.Component {
             href={`${item.href}`}
             title={`${item.title}`}
             className={ cx('menu__link', {'menu__link--current': item.currentPage}) }
-            onClick={ this.toggleNavigation.bind(this) }
           >
             { item.anchor }
           </a>
@@ -49,14 +43,10 @@ class Menu extends React.Component {
     )
   }
 
-  check() {
-    console.log(this.state.width)
-  }
-
   render() {
     return (
       <header
-        className="menu"
+        className={ `menu ${this.state.menuOpen ? 'body--menu-visible' : '' } `}
       >
         <div
           className="wrap"
@@ -68,7 +58,7 @@ class Menu extends React.Component {
             <Logo />
           </a>
           <button
-            className="menu__toggle" onClick={this.toggleNavigation.bind(this)}
+            className="menu__toggle" onClick={ this.handleClick.bind(this) }
           >
             <span className="menu__toggle__line">menu</span></button>
           <nav
