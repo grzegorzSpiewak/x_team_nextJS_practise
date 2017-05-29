@@ -10,7 +10,7 @@ const Skills = (props) => (
 			<h2 className="skills__title">
         { props.title }
       </h2>
-			<p className="skills__subtitle" dangerouslySetInnerHTML={ {__html: props.subtitle} }></p>
+			<p className="skills__subtitle" dangerouslySetInnerHTML={ {__html: props.subtitle} } />
 			<SkillsBadges {...SkillsBadgesData} />
 			{ Button(props.button) }
 		</div>

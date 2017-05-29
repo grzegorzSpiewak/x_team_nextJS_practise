@@ -7,7 +7,7 @@ const Homepage = {
   },
 
   Menu: {
-    Items: [
+    items: [
       {href: "/", anchor: "Home", title: "Home", currentPage: true},
       {href: "/join", anchor: "Join X-Team", title: "Join X-Team as a Developer"},
       {href: "/our-developers", anchor: "Our Developers", title: "Our Developers"},
@@ -15,6 +15,13 @@ const Homepage = {
       {href: "/blog", anchor: "Blog", title: "X-Team's blog"},
       {href: "/portfolio", anchor: "Portfolio", title: "Our Work"}
     ],
+    button: {
+        href: '/hire-developers',
+        anchor: 'Hire X-Team',
+        title: 'Hire X-Team',
+        big: false,
+        style: ''
+    }
   },
 
   Hero: {
@@ -23,12 +30,14 @@ const Homepage = {
     layout: "centered",
     style: "home",
     buttons: [
-      {href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
-      anchor: 'Watch Video',
-      title: 'Watch Video',
-      overlay: true,
-      big: true
-    }]
+      {
+        href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
+        anchor: 'Watch Video',
+        title: 'Watch Video',
+        overlay: true,
+        big: true
+      }
+    ]
   },
 
   Video: {

@@ -21,7 +21,7 @@ const renderCTA = (buttons) => {
 const Herobrands = (props) => (
   <section className={ `hero-section hero-section--${props.layout} hero-section--${props.style}` }>
     <div className={ `hero-section__wrap hero-section__wrap--${props.layout}` }>
-      <h1 className={ `hero-section__title hero-section__title--${props.layout}` } dangerouslySetInnerHTML={ {__html: props.title} }></h1>
+      <h1 className={ `hero-section__title hero-section__title--${props.layout}` } dangerouslySetInnerHTML={ {__html: props.title} }/>
       <div className={ `hero-section__action hero-section__action--${props.layout}` }>
         <p className={ `hero-section__caption hero-section__caption--${props.layout}` }>
           { props.caption }

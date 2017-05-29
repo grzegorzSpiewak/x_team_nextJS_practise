@@ -13,7 +13,7 @@ class Subscription extends React.Component {
   }
 
   sendData(email) {
-    const redirect = this.state.redirect
+    const { redirect } = this.state
     Router.push(redirect)
   }
 
@@ -24,7 +24,7 @@ class Subscription extends React.Component {
   }
 
   handleChange(e) {
-    let form = this.state.form
+    const form = this.state.form
     form.email = e.target.value
     this.setState({
       form: form

@@ -8,7 +8,7 @@ const renderItems = (items) => {
       <li className="skills__list__item">
 			  <a className="skills__list__link" href={ `${item.href}`} title={`${item.title}` }>
 				  <img className="skills__list__icon" alt={ `${item.alt}`} src={`${item.src}` } />
-          <span className="skills__list__label" dangerouslySetInnerHTML={ {__html: item.label} }></span>
+          <span className="skills__list__label" dangerouslySetInnerHTML={ {__html: item.label} } />
 				</a>
 			</li>
 		</Link>
