@@ -29,17 +29,7 @@ export default class extends React.Component {
         <Head {...Homepage.Head}/>
 
         <Layout>
-          <Herobrands {...Homepage.Hero} />
-          <Video {...Homepage.Video} />
-          <Cavalry {...Homepage.Cavalry} />
-          <VideoFilter {...Homepage.VideoFilter} />
-          <CheckList {...Homepage.CheckList} />
-          <SectionCutout {...Homepage.Hire10Years} />
-          <SectionCutout {...Homepage.NeverStop} />
-          <SectionCutout {...Homepage.Ordinary} />
           <Skills {...Homepage.Skills} />
-          <Hire {...Homepage.Hire} />
-          <Subscription { ...Homepage.Subscription } />
         </Layout>
 
       </div>

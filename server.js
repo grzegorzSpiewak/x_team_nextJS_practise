@@ -30,8 +30,10 @@ app.prepare()
     renderAndCache(req, res, '/blog')
   })
 
-  server.get('/hire-developers', (req, res) => {
-    renderAndCache(req, res, '/hire-developers')
+  server.get('/hire-:id', (req, res) => {
+    const actualPage = '/hire'
+    const queryParams = { title: req.params.id }
+    renderAndCache(req, res, actualPage, queryParams)
   })
 
   server.get('/join', (req, res) => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import Router from 'next/router'
 import Link from 'next/link'
 import Logo from './Common/Logo'
 import Button from './Common/Button'

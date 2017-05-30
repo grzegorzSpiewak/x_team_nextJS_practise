@@ -11,19 +11,17 @@ import Link from 'next/link'
  */
 import Homepage from '../data/Homepage'
 
-
 export default class extends React.Component {
 
   render () {
     return (
       <div>
         <Head {...Homepage.Head}/>
-        <Layout>
-          <p>Hire developers page</p>
+        <p>{this.props.url.query.title}</p>
+        <p>To jest test</p>
           <Link href="/">
             <a>Go home</a>
           </Link>
-        </Layout>
       </div>
     )
   }
