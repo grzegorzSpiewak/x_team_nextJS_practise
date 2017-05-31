@@ -3,37 +3,44 @@ import React from 'react'
 /**
  * Components
  */
- import Head from '../components/Head'
- import Layout from '../components/Layout'
- import Herobrands from '../components/Herobrands'
- import Video from '../components/Video'
- import Cavalry from '../components/Cavalry'
- import VideoFilter from '../components/VideoFilter'
- import DevsFed from '../components/DevsFed' //new (diffrent between cavalery)
- import Text from '../components/Text' //new
- import TextQuotes from '../components/TextQuotes' //new
-
-
+import Head from '../components/HeadHire'
+import Menu from '../components/Menu'
+import Footer from '../components/Footer'
+import Herobrands from '../components/Herobrands'
+import Video from '../components/Video'
+import Cavalry from '../components/Cavalry'
+import VideoFilter from '../components/VideoFilter'
+import DevsFed from '../components/DevsFed' //new (diffrent between cavalery)
+import TextLanding from '../components/TextLanding' //new
+import TextPosts from '../components/TextPosts'
+import RelSkills from '../components/RelSkills'
 /**
  * Content
  */
-
+import HireData from '../data/HireData'
+import Homepage from '../data/Homepage'
+import FooterData from '../data/FooterData'
 
 export default class extends React.Component {
 
   render () {
+    const pageQueryTitle = this.props.url.query.title
+    const pageName = pageQueryTitle.split('-')[0]
+    const PageData = HireData[pageName]
+
     return (
       <div>
-        <Head />
+        <Head {...PageData} />
         <div className="landing-tech">
-          //<Text />
-          <Layout>
-            //<Herobrands />
-            //<Video {...Homepage.Video}/>
-            //<Cavalry {...Homepage.Cavalry}/>
-            //<VideoFilter {...Homepage.VideoFilter}/>
-          </Layout>
+          <TextLanding { ...PageData.TextLanding } />
+          <Menu { ...Homepage.Menu } />
+          <Herobrands { ...PageData.Hero } />
+          <Video { ...Homepage.Video } />
+          <DevsFed { ...PageData.DevsFed } />
         </div>
+        <TextPosts { ...PageData.CurrentPosts } />
+        <RelSkills { ...PageData.Related }/>
+        <Footer { ...FooterData } />
       </div>
     )
   }

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const renderItems = (items) => {
 	return items.map((item) =>
-    <Link as={ `hire-${item.id}` } href={ `/hire?title=${item.href}` } key={ `${item.title}` }>
+    <Link as={ `hire-${item.id}-developers` } href={ `/hire?title=${item.href}` } key={ `${item.title}` }>
       <li className="skills__list__item">
 			  <a className="skills__list__link" title={ `${item.title}` }>
 				  <img className="skills__list__icon" alt={ `${item.alt}`} src={ `${item.src}` } />

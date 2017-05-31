@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "classnames": "^2.2.5",
+    "dateformat": "^2.0.0",
     "express": "^4.15.3",
     "lru-cache": "^4.0.2",
     "next": "^2.3.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "classnames": "^2.2.5"
+    "react-dom": "^15.5.4"
   },
   "scripts": {
     "dev": "node server.js",
