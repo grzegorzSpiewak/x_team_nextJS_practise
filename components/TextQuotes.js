@@ -5,9 +5,9 @@ import cx from 'classnames'
 const renderQuotes = (quotes) => {
   return quotes.map((quote) =>
     <blockquote className="text__quote">
-      <p>{quote.text}</p>
+      <p>{ quote.text }</p>
       <cite className="text__cite">
-        — {quote.author}
+        — { quote.author }
       </cite>
     </blockquote>
   )

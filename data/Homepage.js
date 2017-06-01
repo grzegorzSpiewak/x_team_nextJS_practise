@@ -90,7 +90,7 @@ const Homepage = {
     align: 'right',
     style: 'cutout',
     image: 'dev1',
-    ctaHref: '/hire-developers/',
+    ctaHref: '/hire-developers',
     ctaAnchor: 'Hire X-Team',
     ctaTitle: 'Hire X-Team',
     ctaStyle: 'dark'
@@ -116,7 +116,7 @@ const Homepage = {
     align: 'right',
     style: 'cutout',
     image: 'dev3',
-    ctaHref: '/our-developers/',
+    ctaHref: '/our-developers',
     ctaAnchor: 'Learn More',
     ctaTitle: 'Learn More',
     ctaStyle: 'dark'
@@ -146,7 +146,7 @@ const Homepage = {
   Hire: {
     title: 'We<br>never<br>hold<br>back.',
     picture: 'pic1',
-    ctaHref: '/hire-developers/',
+    ctaHref: '/hire-developers',
     ctaAnchor: 'Hire X-Team',
     ctaTitle: 'Hire X-Team',
     ctaStyle: 'red',

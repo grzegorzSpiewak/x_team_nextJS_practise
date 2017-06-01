@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const renderPosts = (items) => {
   return items.map((item) =>
-    <div className="text__item text__item--post">
+    <div className="text__item text__item--post" key={ item.title }>
       <h3>
         <Link href={ item.link }>
           <a>{ item.title }</a>
@@ -16,7 +16,7 @@ const renderPosts = (items) => {
   )
 }
 
-const TextPosts = (props) => console.log(props) || (
+const TextPosts = (props) => (
   <div className={ cx('text text--posts landing-faq', {'text text--posts--has landing-faq': props.hasPosts})}>
     <div className="wrap">
       <h2>Recent { props.tech } posts</h2>
