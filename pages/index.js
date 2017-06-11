@@ -40,6 +40,7 @@ export default class extends React.Component {
           <Hire { ...Homepage.Hire } />
           <Subscription { ...Homepage.Subscription } />
         </Layout>
+        <script src='../static/js/main.js' />
       </div>
     )
   }

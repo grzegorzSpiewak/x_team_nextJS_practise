@@ -12,14 +12,14 @@ export default class MyDocument extends Document {
     return (
      <html>
        <Head>
-         <link rel='stylesheet' href='static/css/main.css' />
+         <link rel='stylesheet' href="../static/css/main.css"/>
        </Head>
        <body>
          {this.props.customValue}
          <Main />
          <NextScript />
-         <script src="./static/js/vendor/mediabox.min.js"></script>
-         <script src="./static/js/vendor/modernizr-2.8.3.min.js"></script>
+         <script src="../static/js/vendor/mediabox.min.js" />
+         <script src="../static/js/vendor/modernizr-2.8.3.min.js" />
        </body>
      </html>
     )

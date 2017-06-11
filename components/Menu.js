@@ -31,7 +31,7 @@ class Menu extends React.Component {
           role="menuitem"
         >
           <a
-            href={`${item.href}`}
+            href={ `${item.href}` }
             title={`${item.title}`}
             className={ cx('menu__link', {'menu__link--current': item.currentPage}) }
           >

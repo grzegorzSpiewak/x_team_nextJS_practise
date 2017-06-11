@@ -103,7 +103,7 @@ const Homepage = {
     align: 'left',
     style: 'cutout',
     image: 'dev2',
-    ctaHref: '/unleash/',
+    ctaHref: '/unleash',
     ctaAnchor: 'Learn More',
     ctaTitle: 'Learn More',
     ctaStyle: ''
@@ -123,7 +123,7 @@ const Homepage = {
   },
 
   Quotes: {
-    ctaHref: '/portfolio/',
+    ctaHref: '/portfolio',
     ctaAnchor: "Past Work",
     ctaTitle: "Portfolio",
     items: [

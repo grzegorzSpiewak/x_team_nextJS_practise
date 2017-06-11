@@ -17,7 +17,7 @@ const Button = (props) => {
       key={ props.title }
     >
       <a
-        href={ props.href }
+        href={ `${props.href}` }
         title={ props.title }
         target="_blank"
         className={ `${classNames} ${mediabox} btn--${props.style}` }
