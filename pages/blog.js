@@ -3,23 +3,27 @@ import React from 'react'
 /**
  * Components
  */
-import Head from '../components/Head/Head'
-import Layout from '../templates/Layout'
+import Head from '../components/Head'
+import Layout from '../components/Layout'
 import Link from 'next/link'
 /**
  * Content
  */
 import Homepage from '../data/Homepage'
 
+export default class extends React.Component {
 
-export default () => (
-  <div>
-    <Head {...Homepage.Head}/>
-    <Layout>
-      <p>Blog page</p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </Layout>
-  </div>
-);
+  render () {
+    return (
+      <div>
+        <Head {...Homepage.Head}/>
+        <Layout>
+          <p>This is blog</p>
+          <Link href="/">
+            <a>Go home</a>
+          </Link>
+        </Layout>
+      </div>
+    )
+  }
+}

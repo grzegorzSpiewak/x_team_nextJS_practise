@@ -19,7 +19,7 @@ export default class extends React.Component {
       <div>
         <Head {...Homepage.Head}/>
         <Layout>
-          <p>This is our portfolio</p>
+          <p>Joined Subscribers</p>
           <Link href="/">
             <a>Go home</a>
           </Link>

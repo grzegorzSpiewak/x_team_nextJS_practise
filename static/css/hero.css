@@ -1,7 +1,7 @@
 .hero-section {
 	color: #fff;
 	overflow: hidden;
-	height: 100vh;
+	height: 100%;
 	background: #363248 url(../images/hero-homepage-small.jpg) no-repeat center top;
 	position: relative;
 }
@@ -184,7 +184,7 @@
 	  width: 140%;
 	  top: -1vw;
 	  left: -20%;
-	  background-image: url('/images/hero-homepage.jpg');
+	  background-image: url('../images/hero-homepage.jpg');
 	  background-size: cover;
 	  background-repeat: no-repeat;
     border-width: 0;

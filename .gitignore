@@ -19,6 +19,8 @@ npm-debug.log
 node_modules
 dist
 .next
+build
+out
 
 ## Bower
 src/components

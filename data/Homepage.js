@@ -7,7 +7,7 @@ const Homepage = {
   },
 
   Menu: {
-    Items: [
+    items: [
       {href: "/", anchor: "Home", title: "Home", currentPage: true},
       {href: "/join", anchor: "Join X-Team", title: "Join X-Team as a Developer"},
       {href: "/our-developers", anchor: "Our Developers", title: "Our Developers"},
@@ -15,6 +15,13 @@ const Homepage = {
       {href: "/blog", anchor: "Blog", title: "X-Team's blog"},
       {href: "/portfolio", anchor: "Portfolio", title: "Our Work"}
     ],
+    button: {
+        href: '/hire-developers',
+        anchor: 'Hire X-Team',
+        title: 'Hire X-Team',
+        big: false,
+        style: ''
+    }
   },
 
   Hero: {
@@ -23,12 +30,14 @@ const Homepage = {
     layout: "centered",
     style: "home",
     buttons: [
-      {href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
-      anchor: 'Watch Video',
-      title: 'Watch Video',
-      overlay: true,
-      big: true
-    }]
+      {
+        href: 'https://www.youtube.com/watch?v=P5oVuk5M50s',
+        anchor: 'Watch Video',
+        title: 'Watch Video',
+        overlay: true,
+        big: true
+      }
+    ]
   },
 
   Video: {
@@ -81,7 +90,7 @@ const Homepage = {
     align: 'right',
     style: 'cutout',
     image: 'dev1',
-    ctaHref: '/hire-developers/',
+    ctaHref: '/hire-developers',
     ctaAnchor: 'Hire X-Team',
     ctaTitle: 'Hire X-Team',
     ctaStyle: 'dark'
@@ -94,7 +103,7 @@ const Homepage = {
     align: 'left',
     style: 'cutout',
     image: 'dev2',
-    ctaHref: '/unleash/',
+    ctaHref: '/unleash',
     ctaAnchor: 'Learn More',
     ctaTitle: 'Learn More',
     ctaStyle: ''
@@ -107,14 +116,14 @@ const Homepage = {
     align: 'right',
     style: 'cutout',
     image: 'dev3',
-    ctaHref: '/our-developers/',
+    ctaHref: '/our-developers',
     ctaAnchor: 'Learn More',
     ctaTitle: 'Learn More',
     ctaStyle: 'dark'
   },
 
   Quotes: {
-    ctaHref: '/portfolio/',
+    ctaHref: '/portfolio',
     ctaAnchor: "Past Work",
     ctaTitle: "Portfolio",
     items: [
@@ -137,12 +146,17 @@ const Homepage = {
   Hire: {
     title: 'We<br>never<br>hold<br>back.',
     picture: 'pic1',
-    ctaHref: '/hire-developers/',
+    ctaHref: '/hire-developers',
     ctaAnchor: 'Hire X-Team',
     ctaTitle: 'Hire X-Team',
     ctaStyle: 'red',
     ctaBig: true
   },
+
+  Subscription: {
+    title: "We'll help you unleash.",
+    subtitle: "Join the 20,000 developers who subscribe to our newsletter."
+  }
 
 }
 

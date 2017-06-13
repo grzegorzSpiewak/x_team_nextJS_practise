@@ -12,8 +12,18 @@ const Button = (props) => {
     'mediabox': props.overlay
   })
   return (
-    <Link href={ `${props.href}` } key={ props.title }>
-      <a href={ props.href } title={ props.title } target="_blank" className={ `${classNames} ${mediabox} btn--${props.style}` }>{ props.anchor }</a>
+    <Link
+      href={ `${props.href}` }
+      key={ props.title }
+    >
+      <a
+        href={ `${props.href}` }
+        title={ props.title }
+        target="_blank"
+        className={ `${classNames} ${mediabox} btn--${props.style}` }
+      >
+        { props.anchor }
+      </a>
     </Link>
   )
 }
