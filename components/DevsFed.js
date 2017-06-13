@@ -26,7 +26,7 @@ const renderDevs = (devs) => {
       <ul className="cavalry__item__list cavalry__item__list--devs" itemScope itemType="http://schema.org/Person">
         <li className="cavalry__item__pic cavalry__item__pic--devs">
           <a className="cavalry__item__pic__link" href={ `${dev.link || '#'}` } target="_blank">
-            <img src={ `${config.staticPath}static/images/devs/${dev.pic}`} alt={ `${dev.name}` } className="cavalry__item__pic__img cavalry__item__pic__img--devs" itemProp="image" />
+            <img src={ `../static/images/devs/${dev.pic}`} alt={ `${dev.name}` } className="cavalry__item__pic__img cavalry__item__pic__img--devs" itemProp="image" />
           </a>
         </li>
         <li className="cavalry__item__title cavalry__item__title--devs" itemProp="name">
