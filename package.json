@@ -1,20 +1,22 @@
 {
-  "name": "x-team-next",
+  "name": "next",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build && next export",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
     "dateformat": "^2.0.0",
     "express": "^4.15.3",
     "lru-cache": "^4.0.2",
-    "next": "^3.0.0-beta10",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "scripts": {
-    "dev": "node server.js",
-    "build": "next build && next export",
-    "start": "NODE_ENV=production node server.js"
+    "next": "^3.0.0-beta16",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
